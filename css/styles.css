@@ -30,7 +30,7 @@ html {
 code {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem;
     font-weight: 800;
 }
@@ -124,6 +124,7 @@ header {
 
 .title {
     color: var(--black);
+    text-align: center;
 }
 
 .container-img-user {
@@ -151,6 +152,7 @@ header {
     font-size: 1.5rem;
     color: var(--black);
     font-weight: 800;
+    text-align: justify;
 }
 
 /* SKILLS */
@@ -173,6 +175,7 @@ header {
     color: var(--black);
     margin: 0 0 .9rem 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 .main-icon-box {
@@ -204,7 +207,7 @@ header {
 }
 
 .description-skills {
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem;
     color: var(--black);
     font-weight: 800;
@@ -285,6 +288,10 @@ header {
     margin: auto;
 }
 
+.title-proyects {
+    text-align: center;
+}
+
 .proyect {
     width: 100%;
     margin: 3rem auto;
@@ -292,6 +299,10 @@ header {
     box-shadow: 1px 1px 30px 15px var(--grey);
     background-color: var(--white);
     margin: 3rem auto;
+}
+
+.title-proyect{
+    text-align: center;
 }
 
 .tecno {
@@ -321,9 +332,310 @@ header {
     padding: 1rem;
 }
 
+.description-contact {
+    text-align: center;
+}
+
 .fa-envelope {
     font-size: 3rem;
     color: var(--red);
     margin: 1rem 0;
 }
+
+.icon-contact {
+    text-align: center;
+}
 /* END CONTACT */
+
+/* RESPONSIVE FOR DESKTOP */
+.description-user-responsive {
+    display: none;
+}
+@media  (min-width: 700px){
+    /* HEADER */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .header-nav {
+        background-color: var(--white);
+        box-shadow: 1px 1px 30px 15px var(--grey);
+        width: 90%;
+        border-radius: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .header-list-items {
+        padding: 0;
+        display: flex;
+    }
+
+    .header-items {
+        display: block;
+        margin: auto;
+    }
+
+    .header-links-items {
+        font-size: 2rem;
+    }
+
+    .fa-home {
+        color: var(--red);
+    }
+
+    .fa-user-tie {
+        color: var(--black);
+    }
+
+    .fa-cogs {
+        color: var(--blue);
+    }
+
+    .fa-code {
+        color: var(--pink);
+    }
+
+    .fa-phone {
+        color: var(--green);
+    }
+    /* END HEADER */
+
+    /* CUERPO */
+    .main-container {
+        background-color: var(--white);
+        box-shadow: 1px 1px 20px 15px var(--grey);
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 9rem;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-title {
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .title {
+        color: var(--black);
+    }
+
+    .container-img-user {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding: .5rem 0;
+    }
+
+    .img-user {
+        width: 80%;
+        border-radius: 100%;
+        box-shadow: 0px 0px 10px 10px var(--grey);
+        margin: 1rem auto;
+    }
+
+    .description-user-box {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        display: none;
+    }
+
+    .description-user {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--black);
+        font-weight: 800;
+    }
+
+    .description-user-responsive {
+        display: block;
+        padding: 2rem;
+        margin: auto;
+        text-align: justify;
+    }
+
+    /* SKILLS */
+    .main-container-skills {
+        width: 90%;
+        box-shadow: 1px 1px 20px 15px var(--grey);
+        margin: 3rem auto;
+        border-radius: 10px;
+        background-color: var(--white);
+        padding: 1rem 0;
+    }
+
+    .container-title-skills {
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .title-skills {
+        color: var(--black);
+        margin: 0 0 .9rem 0;
+        font-size: 2rem;
+    }
+
+    .main-icon-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-box {
+        margin: auto;
+    }
+
+    .icon-box i {
+        font-size: 4rem;
+        transition: .5s;
+    }
+
+    .fa-html5 {
+        color: var(--orange);
+    }
+
+    .fa-css3-alt {
+        color: var(--blue);
+    }
+
+    .description-skills-box {
+        width: 90%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .description-skills {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--black);
+        font-weight: 800;
+    }
+
+    /* TECNOLOGIES */
+    .main-box-tecnologies {
+        width: 90%;
+        margin: 3rem auto;
+        border-radius: 10px;
+    }
+
+    .tecnologies-skills-box {
+        box-shadow: 1px 1px 20px 15px var(--grey);
+        border-radius: 10px;
+        background-color: var(--white);
+        margin: 3rem auto;
+        padding: .5rem;
+    }
+
+    .tecnologies {
+        margin: auto;
+        width: 100%;
+        display: flex;
+    }
+
+    .tecnologies i {
+        font-size: 4rem;
+        margin: 1.5rem auto;
+        display: block;
+    }
+
+    .description-box {
+        margin: auto;
+        width: 90%;
+    }
+
+    .description-tecnologies {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .html {
+        color: var(--orange);
+        font-weight: 800;
+    }
+
+    .css {
+        color: var(--blue);
+        font-weight: 800;
+    }
+
+    /* END TECNOLOGIES */
+
+    /* PROYECTOS DESCRIPTION */
+    .main-description-proyect {
+        width: 90%;
+        margin: 3rem auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 15px var(--grey);
+        background-color: var(--white);
+    }
+    .title-proyect {
+        font-size: 2rem;
+        color: var(--black);
+        margin: 0 0 .9rem 0;
+    }
+    .description-proyect-box {
+        padding: 1.5rem;
+        color: var(--black);
+    }
+
+    /* END PROYECTOS DESCRIPTION */
+
+    /* PROYECTS */
+    .main-proyect-box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .proyect {
+        width: 100%;
+        margin: 3rem auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 30px 15px var(--grey);
+        background-color: var(--white);
+        margin: 3rem auto;
+    }
+
+    .tecno {
+        background-color: var(--grey);
+        box-shadow: 1px 1px 30px 12px var(--grey);
+    }
+
+    .img-proyect {
+        width: 100%;
+        border-radius: 10px;
+        margin: auto;
+        height: 100%;
+    }
+
+    /* END PROYECTOS */
+
+    /* CONTACT */
+    .main-contact {
+        width: 90%;
+        margin: 3rem auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 15px var(--grey);
+        background-color: var(--white);
+    }
+
+    .contact-box {
+        padding: 1rem;
+    }
+
+    .fa-envelope {
+        font-size: 3rem;
+        color: var(--red);
+        margin: 1rem 0;
+    }
+}
