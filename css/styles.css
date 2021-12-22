@@ -351,6 +351,14 @@ header {
 .description-user-responsive {
     display: none;
 }
+
+.proyect-box-responsive {
+    display: none;
+}
+
+.img-proyect-box-responsive {
+    display: none;
+}
 @media  (min-width: 700px){
     /* HEADER */
     header {
@@ -410,11 +418,11 @@ header {
     /* CUERPO */
     .main-container {
         background-color: var(--white);
-        box-shadow: 1px 1px 20px 15px var(--grey);
-        width: 100%;
+        box-shadow: none;
+        width: 70%;
         margin: auto;
         border-radius: 10px;
-        margin-top: 9rem;
+        margin-top: 7rem;
         padding: 1rem 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -428,6 +436,7 @@ header {
 
     .title {
         color: var(--black);
+        margin: auto;
     }
 
     .container-img-user {
@@ -438,8 +447,8 @@ header {
     }
 
     .img-user {
-        width: 80%;
-        border-radius: 100%;
+        width: 90%;
+        border-radius: 10%;
         box-shadow: 0px 0px 10px 10px var(--grey);
         margin: 1rem auto;
     }
@@ -460,15 +469,16 @@ header {
 
     .description-user-responsive {
         display: block;
-        padding: 2rem;
         margin: auto;
         text-align: justify;
+        margin-top: 1rem;
+        font-size: 1.5rem;
     }
 
     /* SKILLS */
     .main-container-skills {
-        width: 90%;
-        box-shadow: 1px 1px 20px 15px var(--grey);
+        width: 70%;
+        box-shadow: none;
         margin: 3rem auto;
         border-radius: 10px;
         background-color: var(--white);
@@ -490,6 +500,8 @@ header {
     .main-icon-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        margin: auto;
     }
 
     .icon-box {
@@ -497,7 +509,7 @@ header {
     }
 
     .icon-box i {
-        font-size: 4rem;
+        font-size: 7rem;
         transition: .5s;
     }
 
@@ -510,27 +522,29 @@ header {
     }
 
     .description-skills-box {
-        width: 90%;
+        width: 50%;
         margin: auto;
         padding: .5rem 0;
     }
 
     .description-skills {
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: justify;
+        font-size: 2rem;
         color: var(--black);
         font-weight: 800;
     }
 
     /* TECNOLOGIES */
     .main-box-tecnologies {
-        width: 90%;
+        width: 70%;
         margin: 3rem auto;
         border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tecnologies-skills-box {
-        box-shadow: 1px 1px 20px 15px var(--grey);
+        box-shadow: none;
         border-radius: 10px;
         background-color: var(--white);
         margin: 3rem auto;
@@ -544,14 +558,14 @@ header {
     }
 
     .tecnologies i {
-        font-size: 4rem;
+        font-size: 7rem;
         margin: 1.5rem auto;
         display: block;
     }
 
     .description-box {
         margin: auto;
-        width: 90%;
+        width: 50%;
     }
 
     .description-tecnologies {
@@ -573,10 +587,10 @@ header {
 
     /* PROYECTOS DESCRIPTION */
     .main-description-proyect {
-        width: 90%;
+        width: 70%;
         margin: 3rem auto;
         border-radius: 10px;
-        box-shadow: 1px 1px 20px 15px var(--grey);
+        box-shadow: none;
         background-color: var(--white);
     }
     .title-proyect {
@@ -587,45 +601,80 @@ header {
     .description-proyect-box {
         padding: 1.5rem;
         color: var(--black);
+        width: 50%;
+        margin: auto;
+    }
+    .description-proyect {
+        font-size: 2rem;
     }
 
     /* END PROYECTOS DESCRIPTION */
 
     /* PROYECTS */
-    .main-proyect-box {
-        width: 90%;
+
+    .img-proyect-box-responsive  {
+        display: block;
+    }
+    .proyect-box-responsive {
+        display: block;
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .proyect-responsive {
+        width: 70%;
         margin: auto;
     }
 
-    .proyect {
-        width: 100%;
-        margin: 3rem auto;
-        border-radius: 10px;
-        box-shadow: 1px 1px 30px 15px var(--grey);
-        background-color: var(--white);
-        margin: 3rem auto;
+    .title-proyect-responsive {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: auto;
+        height: max-content;
     }
 
-    .tecno {
-        background-color: var(--grey);
-        box-shadow: 1px 1px 30px 12px var(--grey);
+    .title-responsive-box {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .img-proyect-box-responsive {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-proyect-responsive-box {
+        width: 100%;
+    }
+
+    .img-proyect-responsive {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        height: 25rem;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 15px var(--grey);
     }
 
     .img-proyect {
-        width: 100%;
-        border-radius: 10px;
-        margin: auto;
-        height: 100%;
+        display: none;
+    }
+
+    .title-proyects {
+        display: none;
     }
 
     /* END PROYECTOS */
 
     /* CONTACT */
     .main-contact {
-        width: 90%;
-        margin: 3rem auto;
-        border-radius: 10px;
-        box-shadow: 1px 1px 20px 15px var(--grey);
+        width: 70%;
+        box-shadow: none;
         background-color: var(--white);
     }
 
