@@ -123,7 +123,7 @@ header {
 }
 
 .title {
-    color: var(--green);
+    color: var(--black);
 }
 
 .container-img-user {
@@ -148,8 +148,8 @@ header {
 
 .description-user {
     text-align: center;
-    font-size: 1rem;
-    color: var(--orange);
+    font-size: 1.5rem;
+    color: var(--black);
     font-weight: 800;
 }
 
@@ -170,8 +170,9 @@ header {
 }
 
 .title-skills {
-    color: var(--red);
-    margin: 0 0 .5rem 0;
+    color: var(--black);
+    margin: 0 0 .9rem 0;
+    font-size: 2rem;
 }
 
 .main-icon-box {
@@ -188,24 +189,24 @@ header {
     transition: .5s;
 }
 
-.fa-html5:hover {
+.fa-html5 {
     color: var(--orange);
 }
 
-.fa-css3-alt:hover {
+.fa-css3-alt {
     color: var(--blue);
 }
 
 .description-skills-box {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: .5rem 0;
 }
 
 .description-skills {
     text-align: center;
-    font-size: 1rem;
-    color: var(--blue);
+    font-size: 1.5rem;
+    color: var(--black);
     font-weight: 800;
 }
 
@@ -220,7 +221,6 @@ header {
     box-shadow: 1px 1px 20px 15px var(--grey);
     border-radius: 10px;
     background-color: var(--white);
-    width: 90%;
     margin: 3rem auto;
     padding: .5rem;
 }
@@ -233,16 +233,17 @@ header {
 
 .tecnologies i {
     font-size: 4rem;
-    margin: auto;
+    margin: 1.5rem auto;
     display: block;
 }
 
 .description-box {
     margin: auto;
+    width: 90%;
 }
 
 .description-tecnologies {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -254,4 +255,74 @@ header {
 .css {
     color: var(--blue);
     font-weight: 800;
+}
+
+/* END TECNOLOGIES */
+
+/* PROYECTOS DESCRIPTION */
+.main-description-proyect {
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 15px var(--grey);
+    background-color: var(--white);
+}
+.title-proyect {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 0 0 .9rem 0;
+}
+.description-proyect-box {
+    padding: 1.5rem;
+    color: var(--black);
+}
+
+/* END PROYECTOS DESCRIPTION */
+
+/* PROYECTS */
+.main-proyect-box {
+    width: 90%;
+    margin: auto;
+}
+
+.proyect {
+    width: 100%;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 15px var(--grey);
+    background-color: var(--white);
+    margin: 3rem auto;
+}
+
+.tecno {
+    background-color: var(--grey);
+    box-shadow: 1px 1px 30px 12px var(--grey);
+}
+
+.img-proyect {
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    height: 100%;
+}
+
+/* END PROYECTOS */
+
+/* CONTACT */
+.main-contact {
+    width: 90%;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 15px var(--grey);
+    background-color: var(--white);
+}
+
+.contact-box {
+    padding: 1rem;
+}
+
+.fa-envelope {
+    font-size: 3rem;
+    color: var(--red);
+    margin: 1rem 0;
 }
