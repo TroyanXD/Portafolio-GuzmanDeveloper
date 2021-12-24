@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
 }
 /* END RESET */
 
@@ -30,9 +31,10 @@ html {
 code {
     display: block;
     width: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: 1.5rem;
-    font-weight: 800;
+    color: var(--grey2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* END GENERAL */
 
@@ -40,7 +42,9 @@ code {
 :root {
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
+    --black2: rgb(99, 99, 99);
     --grey: rgb(219, 219, 219);
+    --grey2: rgb(136, 136, 136);
     --blue: rgb(5, 184, 207);
     --orange: rgb(255, 166, 0);
     --pink: rgb(255, 0, 221);
@@ -59,7 +63,6 @@ header {
 
 .header-nav {
     background-color: var(--white);
-    box-shadow: 1px 1px 30px 15px var(--grey);
     width: 80%;
     border-radius: 50px;
     justify-content: space-between;
@@ -84,31 +87,15 @@ header {
     font-size: 1.5rem;
 }
 
-.fa-home {
-    color: var(--red);
+.header-links-items i{
+    color: var(--grey2);
 }
 
-.fa-user-tie {
-    color: var(--black);
-}
-
-.fa-cogs {
-    color: var(--blue);
-}
-
-.fa-code {
-    color: var(--pink);
-}
-
-.fa-phone {
-    color: var(--green);
-}
 /* END HEADER */
 
 /* CUERPO */
 .main-container {
     background-color: var(--white);
-    box-shadow: 1px 1px 20px 15px var(--grey);
     width: 90%;
     margin: auto;
     border-radius: 10px;
@@ -123,7 +110,7 @@ header {
 }
 
 .title {
-    color: var(--black);
+    color: var(--black2);
     text-align: center;
 }
 
@@ -137,7 +124,6 @@ header {
 .img-user {
     width: 80%;
     border-radius: 100%;
-    box-shadow: 0px 0px 10px 10px var(--grey);
     margin: 1rem auto;
 }
 
@@ -150,15 +136,13 @@ header {
 .description-user {
     text-align: center;
     font-size: 1.5rem;
-    color: var(--black);
-    font-weight: 800;
-    text-align: justify;
+    color: var(--grey2);
+    text-align: center;
 }
 
 /* SKILLS */
 .main-container-skills {
     width: 90%;
-    box-shadow: 1px 1px 20px 15px var(--grey);
     margin: 3rem auto;
     border-radius: 10px;
     background-color: var(--white);
@@ -172,7 +156,7 @@ header {
 }
 
 .title-skills {
-    color: var(--black);
+    color: var(--black2);
     margin: 0 0 .9rem 0;
     font-size: 2rem;
     text-align: center;
@@ -180,7 +164,7 @@ header {
 
 .main-icon-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .icon-box {
@@ -200,6 +184,10 @@ header {
     color: var(--blue);
 }
 
+.xd {
+    color: rgb(78, 78, 78);
+}
+
 .description-skills-box {
     width: 90%;
     margin: auto;
@@ -207,25 +195,24 @@ header {
 }
 
 .description-skills {
-    text-align: justify;
+    text-align: center;
     font-size: 1.5rem;
-    color: var(--black);
-    font-weight: 800;
+    color: var(--grey2);
 }
 
 /* TECNOLOGIES */
 .main-box-tecnologies {
-    width: 90%;
-    margin: 3rem auto;
+    width: 100%;
+    margin: auto;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .tecnologies-skills-box {
-    box-shadow: 1px 1px 20px 15px var(--grey);
     border-radius: 10px;
-    background-color: var(--white);
-    margin: 3rem auto;
-    padding: .5rem;
+    margin: auto;
+    padding: 0 .5rem;
 }
 
 .tecnologies {
@@ -246,10 +233,14 @@ header {
 }
 
 .description-tecnologies {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--black2);
 }
 
+.title-skills {
+    margin: 0;
+}
 .html {
     color: var(--orange);
     font-weight: 800;
@@ -267,17 +258,24 @@ header {
     width: 90%;
     margin: 3rem auto;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px 15px var(--grey);
     background-color: var(--white);
 }
 .title-proyect {
     font-size: 2rem;
-    color: var(--black);
+    color: var(--black2);
     margin: 0 0 .9rem 0;
+}
+
+.title-proyect-responsive {
+    color: var(--black2);
+}
+
+.description-proyect {
+    color: var(--grey2);
+    text-align: center;
 }
 .description-proyect-box {
     padding: 1.5rem;
-    color: var(--black);
 }
 
 /* END PROYECTOS DESCRIPTION */
@@ -290,31 +288,28 @@ header {
 
 .title-proyects {
     text-align: center;
+    color: var(--black2);
 }
 
 .proyect {
     width: 100%;
     margin: 3rem auto;
     border-radius: 10px;
-    box-shadow: 1px 1px 30px 15px var(--grey);
-    background-color: var(--white);
     margin: 3rem auto;
 }
 
-.title-proyect{
+.title-proyects{
     text-align: center;
-}
-
-.tecno {
-    background-color: var(--grey);
-    box-shadow: 1px 1px 30px 12px var(--grey);
+    font-size: 1rem;
+    color: var(--black2);
 }
 
 .img-proyect {
-    width: 100%;
+    width: 70%;
     border-radius: 10px;
     margin: auto;
     height: 100%;
+    display: flex;
 }
 
 /* END PROYECTOS */
@@ -324,7 +319,6 @@ header {
     width: 90%;
     margin: 3rem auto;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px 15px var(--grey);
     background-color: var(--white);
 }
 
@@ -334,11 +328,12 @@ header {
 
 .description-contact {
     text-align: center;
+    color: var(--black2);
 }
 
 .fa-envelope {
     font-size: 3rem;
-    color: var(--red);
+    color: var(--black2);
     margin: 1rem 0;
 }
 
@@ -370,8 +365,7 @@ header {
 
     .header-nav {
         background-color: var(--white);
-        box-shadow: 1px 1px 30px 15px var(--grey);
-        width: 90%;
+        width: 70%;
         border-radius: 50px;
         justify-content: space-between;
         align-items: center;
@@ -392,26 +386,6 @@ header {
 
     .header-links-items {
         font-size: 2rem;
-    }
-
-    .fa-home {
-        color: var(--red);
-    }
-
-    .fa-user-tie {
-        color: var(--black);
-    }
-
-    .fa-cogs {
-        color: var(--blue);
-    }
-
-    .fa-code {
-        color: var(--pink);
-    }
-
-    .fa-phone {
-        color: var(--green);
     }
     /* END HEADER */
 
@@ -435,7 +409,7 @@ header {
     }
 
     .title {
-        color: var(--black);
+        color: var(--black2);
         margin: auto;
     }
 
@@ -447,9 +421,8 @@ header {
     }
 
     .img-user {
-        width: 90%;
-        border-radius: 10%;
-        box-shadow: 0px 0px 10px 10px var(--grey);
+        width: 70%;
+        border-radius: 100%;
         margin: 1rem auto;
     }
 
@@ -462,17 +435,20 @@ header {
 
     .description-user {
         text-align: center;
-        font-size: 1.5rem;
-        color: var(--black);
-        font-weight: 800;
+        font-size: 5rem;
+        display: none;
     }
 
     .description-user-responsive {
         display: block;
-        margin: auto;
-        text-align: justify;
-        margin-top: 1rem;
+        margin-top: 2rem;
         font-size: 1.5rem;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .container-title {
+        margin: auto;
     }
 
     /* SKILLS */
@@ -492,33 +468,8 @@ header {
     }
 
     .title-skills {
-        color: var(--black);
-        margin: 0 0 .9rem 0;
+        color: var(--black2);
         font-size: 2rem;
-    }
-
-    .main-icon-box {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 50%;
-        margin: auto;
-    }
-
-    .icon-box {
-        margin: auto;
-    }
-
-    .icon-box i {
-        font-size: 7rem;
-        transition: .5s;
-    }
-
-    .fa-html5 {
-        color: var(--orange);
-    }
-
-    .fa-css3-alt {
-        color: var(--blue);
     }
 
     .description-skills-box {
@@ -528,10 +479,9 @@ header {
     }
 
     .description-skills {
-        text-align: justify;
+        text-align: center;
         font-size: 2rem;
-        color: var(--black);
-        font-weight: 800;
+        color: var(--grey2);
     }
 
     /* TECNOLOGIES */
@@ -540,13 +490,12 @@ header {
         margin: 3rem auto;
         border-radius: 10px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .tecnologies-skills-box {
         box-shadow: none;
         border-radius: 10px;
-        background-color: var(--white);
         margin: 3rem auto;
         padding: .5rem;
     }
@@ -565,59 +514,63 @@ header {
 
     .description-box {
         margin: auto;
-        width: 50%;
+        width: 100%;
     }
 
     .description-tecnologies {
-        font-size: 1.5rem;
-        font-weight: 800;
+        font-size: 2rem;
+        color: var(--black2);
+        text-align: center;
     }
 
     .html {
         color: var(--orange);
-        font-weight: 800;
     }
 
     .css {
         color: var(--blue);
-        font-weight: 800;
     }
 
     /* END TECNOLOGIES */
 
     /* PROYECTOS DESCRIPTION */
     .main-description-proyect {
-        width: 70%;
-        margin: 3rem auto;
+        width: 100%;
+        margin: 6rem auto;
         border-radius: 10px;
         box-shadow: none;
-        background-color: var(--white);
+        background-color: transparent;
     }
     .title-proyect {
         font-size: 2rem;
-        color: var(--black);
-        margin: 0 0 .9rem 0;
+        color: var(--black2);
+        margin: 1rem 0;
     }
     .description-proyect-box {
-        padding: 1.5rem;
-        color: var(--black);
-        width: 50%;
+        color: var(--grey2);
+        width: 70%;
         margin: auto;
+        background-color: var(--white);
+        border-radius: 10px;
     }
     .description-proyect {
         font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
     }
 
     /* END PROYECTOS DESCRIPTION */
 
     /* PROYECTS */
-
+    .main-proyect-box {
+        width: 100%;
+    }
     .img-proyect-box-responsive  {
         display: block;
     }
     .proyect-box-responsive {
         display: block;
-        width: 70%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -642,14 +595,15 @@ header {
     }
 
     .img-proyect-box-responsive {
-        width: 70%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .img-proyect-responsive-box {
-        width: 100%;
+        width: 70%;
+        margin: auto;
     }
 
     .img-proyect-responsive {
@@ -658,7 +612,6 @@ header {
         display: flex;
         height: 25rem;
         border-radius: 10px;
-        box-shadow: 1px 1px 20px 15px var(--grey);
     }
 
     .img-proyect {
@@ -684,7 +637,295 @@ header {
 
     .fa-envelope {
         font-size: 3rem;
-        color: var(--red);
+        color: var(--grey2);
+        margin: 1rem 0;
+    }
+}
+
+@media  (min-width: 700px){
+    /* HEADER */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .header-nav {
+        background-color: var(--white);
+        width: 70%;
+        border-radius: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .header-list-items {
+        padding: 0;
+        display: flex;
+    }
+
+    .header-items {
+        display: block;
+        margin: auto;
+    }
+
+    .header-links-items {
+        font-size: 2rem;
+    }
+    /* END HEADER */
+
+    /* CUERPO */
+    .main-container {
+        background-color: var(--white);
+        box-shadow: none;
+        width: 70%;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 7rem;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-title {
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .title {
+        color: var(--black2);
+        margin: auto;
+    }
+
+    .container-img-user {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding: .5rem 0;
+    }
+
+    .img-user {
+        width: 70%;
+        border-radius: 100%;
+        margin: 1rem auto;
+    }
+
+    .description-user-box {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        display: none;
+    }
+
+    .description-user {
+        text-align: center;
+        font-size: 5rem;
+        display: none;
+    }
+
+    .description-user-responsive {
+        display: block;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .container-title {
+        margin: auto;
+    }
+
+    /* SKILLS */
+    .main-container-skills {
+        width: 70%;
+        box-shadow: none;
+        margin: 3rem auto;
+        border-radius: 10px;
+        background-color: var(--white);
+        padding: 1rem 0;
+    }
+
+    .container-title-skills {
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .title-skills {
+        color: var(--black2);
+        font-size: 2rem;
+    }
+
+    .description-skills-box {
+        width: 50%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+
+    .description-skills {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--grey2);
+    }
+
+    /* TECNOLOGIES */
+    .main-box-tecnologies {
+        width: 70%;
+        margin: 3rem auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tecnologies-skills-box {
+        box-shadow: none;
+        border-radius: 10px;
+        margin: 3rem auto;
+        padding: .5rem;
+    }
+
+    .tecnologies {
+        margin: auto;
+        width: 100%;
+        display: flex;
+    }
+
+    .tecnologies i {
+        font-size: 7rem;
+        margin: 1.5rem auto;
+        display: block;
+    }
+
+    .description-box {
+        margin: auto;
+        width: 100%;
+    }
+
+    .description-tecnologies {
+        font-size: 2rem;
+        color: var(--black2);
+        text-align: center;
+    }
+
+    .html {
+        color: var(--orange);
+    }
+
+    .css {
+        color: var(--blue);
+    }
+
+    /* END TECNOLOGIES */
+
+    /* PROYECTOS DESCRIPTION */
+    .main-description-proyect {
+        width: 100%;
+        margin: 6rem auto;
+        border-radius: 10px;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .title-proyect {
+        font-size: 2rem;
+        color: var(--black2);
+        margin: 1rem 0;
+    }
+    .description-proyect-box {
+        color: var(--grey2);
+        width: 70%;
+        margin: auto;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+    .description-proyect {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /* END PROYECTOS DESCRIPTION */
+
+    /* PROYECTS */
+    .main-proyect-box {
+        width: 100%;
+    }
+    .img-proyect-box-responsive  {
+        display: block;
+    }
+    .proyect-box-responsive {
+        display: block;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .proyect-responsive {
+        width: 70%;
+        margin: auto;
+    }
+
+    .title-proyect-responsive {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: auto;
+        height: max-content;
+    }
+
+    .title-responsive-box {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .img-proyect-box-responsive {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-proyect-responsive-box {
+        width: 70%;
+        margin: auto;
+    }
+
+    .img-proyect-responsive {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .img-proyect {
+        display: none;
+    }
+
+    .title-proyects {
+        display: none;
+    }
+
+    /* END PROYECTOS */
+
+    /* CONTACT */
+    .main-contact {
+        width: 70%;
+        box-shadow: none;
+        background-color: var(--white);
+    }
+
+    .contact-box {
+        padding: 1rem;
+    }
+
+    .fa-envelope {
+        font-size: 3rem;
+        color: var(--grey2);
         margin: 1rem 0;
     }
 }
